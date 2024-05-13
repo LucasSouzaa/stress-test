@@ -8,4 +8,6 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
 });
 
 
-Route::get('/orders', \App\Http\Controllers\OrderController::class);
+Route::get('/orders', [\App\Http\Controllers\OrderController::class, 'index']);
+Route::get('/orders/raw', [\App\Http\Controllers\OrderController::class, 'raw']);
+Route::get('/orders/withcache', [\App\Http\Controllers\OrderController::class, 'withcache']);
