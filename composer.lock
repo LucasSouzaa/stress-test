@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f591ce668eee86ccbc9b3450b442939",
+    "content-hash": "27e518f6d9d2c3991b9e71fd4ed04adc",
     "packages": [
         {
             "name": "brick/math",
@@ -136,6 +136,76 @@
             "time": "2024-02-09T16:56:22+00:00"
         },
         {
+            "name": "chaseconey/laravel-datadog-helper",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chaseconey/laravel-datadog-helper.git",
+                "reference": "092d22f32f9134deaeb171123f4da73dcee7948c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chaseconey/laravel-datadog-helper/zipball/092d22f32f9134deaeb171123f4da73dcee7948c",
+                "reference": "092d22f32f9134deaeb171123f4da73dcee7948c",
+                "shasum": ""
+            },
+            "require": {
+                "datadog/php-datadogstatsd": "^1.4.0",
+                "illuminate/support": ">=5.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0||~5.0",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ChaseConey\\LaravelDatadogHelper\\LaravelDatadogHelperServiceProvider"
+                    ],
+                    "aliases": {
+                        "Datadog": "ChaseConey\\LaravelDatadogHelper\\Datadog"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ChaseConey\\LaravelDatadogHelper\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chase Coney",
+                    "email": "chasiepoo@gmail.com",
+                    "homepage": "http://chaseconey.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel Datadog helper package.",
+            "homepage": "https://github.com/chaseconey/laravel-datadog-helper",
+            "keywords": [
+                "chaseconey",
+                "laravel-datadog-helper"
+            ],
+            "support": {
+                "issues": "https://github.com/chaseconey/laravel-datadog-helper/issues",
+                "source": "https://github.com/chaseconey/laravel-datadog-helper/tree/1.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/chaseconey",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-08-15T00:45:13+00:00"
+        },
+        {
             "name": "datadog/dd-trace",
             "version": "0.99.1",
             "source": {
@@ -238,6 +308,70 @@
                 "source": "https://github.com/DataDog/dd-trace-php/tree/0.99.1"
             },
             "time": "2024-04-04T15:06:49+00:00"
+        },
+        {
+            "name": "datadog/php-datadogstatsd",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DataDog/php-datadogstatsd.git",
+                "reference": "0efdd1c38f6d3dd407efbb899ad1fd2e5cd18085"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DataDog/php-datadogstatsd/zipball/0efdd1c38f6d3dd407efbb899ad1fd2e5cd18085",
+                "reference": "0efdd1c38f6d3dd407efbb899ad1fd2e5cd18085",
+                "shasum": ""
+            },
+            "require": {
+                "ext-sockets": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.3",
+                "yoast/phpunit-polyfills": "^1.0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DataDog\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Corley",
+                    "email": "anthroprose@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Datadog",
+                    "email": "dev@datadoghq.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An extremely simple PHP datadogstatsd client",
+            "homepage": "https://www.datadoghq.com/",
+            "keywords": [
+                "DataDog",
+                "check",
+                "error-reporting",
+                "health",
+                "logging",
+                "monitoring",
+                "statsd"
+            ],
+            "support": {
+                "chat": "https://chat.datadoghq.com/",
+                "email": "package@datadoghq.com",
+                "irc": "irc://irc.freenode.net/datadog",
+                "issues": "https://github.com/DataDog/php-datadogstatsd/issues",
+                "source": "https://github.com/DataDog/php-datadogstatsd"
+            },
+            "time": "2024-02-23T20:25:47+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
