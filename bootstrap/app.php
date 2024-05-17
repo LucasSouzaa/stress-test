@@ -14,7 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->api(prepend: [
             \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
-            \ChaseConey\LaravelDatadogHelper\Middleware\LaravelDatadogMiddleware::class
+            \App\Http\Middleware\DataDogTimeMetrics::class,
         ]);
 
         $middleware->alias([
